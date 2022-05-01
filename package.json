@@ -4,7 +4,7 @@
   "licence": "MIT",
   "version": "1.4.0",
   "private": false,
-  "homepage": "http://mkukharchuk.github.io/test-dashboard/",
+  "homepage": "https://mkukharchuk.github.io/test-dashboard/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
