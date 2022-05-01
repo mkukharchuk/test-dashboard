@@ -48,7 +48,7 @@ export default function DashboardApp() {
             <AppWidgetSummary title="Казань" total={234} color="error" icon={'ant-design:bug-filled'} />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits
               title="Website Visits"
               subheader="(+43%) than last year"
@@ -136,9 +136,9 @@ export default function DashboardApp() {
               ]}
               chartColors={[...Array(6)].map(() => theme.palette.text.secondary)}
             />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppNewsUpdate
               title="News Update"
               list={[...Array(5)].map((_, index) => ({
@@ -167,7 +167,7 @@ export default function DashboardApp() {
                 time: faker.date.past(),
               }))}
             />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} md={12} lg={12}>
             <Calendar />

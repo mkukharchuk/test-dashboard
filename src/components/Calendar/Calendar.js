@@ -40,6 +40,7 @@ export default function Calendar() {
         </Button>
       </div>
       <Scheduler
+      view="month"
         events={EVENTS}
         resources={RESOURCES}
         resourceFields={{
