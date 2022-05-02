@@ -1,6 +1,6 @@
 import { useState, Fragment } from 'react';
 // material
-import { Container, Stack, Typography, Button } from '@mui/material';
+import { Container, Stack, Typography, Button, Box } from '@mui/material';
 // components
 import { Scheduler } from "@aldabil/react-scheduler";
 // import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
@@ -12,33 +12,31 @@ import { RESOURCES, EVENTS } from "../../_mock/calendar";
 // ----------------------------------------------------------------------
 
 export default function Calendar() {
-  const [mode, setMode] = useState("default");
+  const [mode, setMode] = useState("tabs");
 
   return (
     // <Page title="Dashboard: Products">
     //   <Container>
 
-
-        <>
-      <div style={{ textAlign: "center" }}>
-        <span>Resource View Mode: </span>
-        <Button
-          color={mode === "default" ? "primary" : "inherit"}
-          variant={mode === "default" ? "contained" : "text"}
-          size="small"
-          onClick={() => setMode("default")}
-        >
-          Default
-        </Button>
+<>
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'left', marginBottom: '10px' }}>
         <Button
           color={mode === "tabs" ? "primary" : "inherit"}
           variant={mode === "tabs" ? "contained" : "text"}
           size="small"
           onClick={() => setMode("tabs")}
         >
-          Tabs
+          По городам
         </Button>
-      </div>
+        <Button
+          color={mode === "default" ? "primary" : "inherit"}
+          variant={mode === "default" ? "contained" : "text"}
+          size="small"
+          onClick={() => setMode("default")}
+        >
+          Показать все
+        </Button>
+      </Box>
       <Scheduler
       view="month"
         events={EVENTS}

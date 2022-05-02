@@ -12,19 +12,39 @@ const navConfig = [
     icon: getIcon('eva:pie-chart-2-fill'),
   },
   {
-    title: 'user',
-    path: '/dashboard/user',
-    icon: getIcon('eva:people-fill'),
+    title: 'Проекты',
+    path: '/dashboard/projects',
+    icon: getIcon('eva:calendar-fill'),
   },
   {
-    title: 'product',
-    path: '/dashboard/products',
+    title: 'Оборудование',
+    path: '/dashboard/stuff',
     icon: getIcon('eva:shopping-bag-fill'),
   },
   {
-    title: 'blog',
-    path: '/dashboard/blog',
-    icon: getIcon('eva:file-text-fill'),
+    title: 'Логистика',
+    path: '/dashboard/logistic',
+    icon: getIcon('eva:map-fill'),
+  },
+  {
+    title: 'Задачи',
+    path: '/dashboard/tasks',
+    icon: getIcon('eva:checkmark-square-2-fill'),
+  },
+  {
+    title: 'Клиенты',
+    path: '/dashboard/clients',
+    icon: getIcon('eva:person-done-fill'),
+  },
+  {
+    title: 'Пользователи',
+    path: '/dashboard/users',
+    icon: getIcon('eva:people-fill'),
+  },
+  {
+    title: 'Settings',
+    path: '/settings',
+    icon: getIcon('eva:options-2-fill'),
   },
   {
     title: 'login',

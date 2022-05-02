@@ -5,7 +5,12 @@ import { Grid, Container, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
 import Calendar from '../components/Calendar/Calendar';
-import Iconify from '../components/Iconify';
+import Table from '../components/Table';
+import moscowLogo from '../assets/icons/Moscow.svg';
+import minskLogo from '../assets/icons/Minsk.svg';
+import spLogo from '../assets/icons/Saint_Petersburg.svg';
+import kazanLogo from '../assets/icons/Kazan.svg';
+
 // sections
 import {
   AppTasks,
@@ -28,25 +33,26 @@ export default function DashboardApp() {
     <Page title="Dashboard">
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Hi, Welcome back
+        👋 Привет, Виталий!
         </Typography>
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Минск" total={714000} icon={'ant-design:android-filled'} />
+            <AppWidgetSummary title="Минск" totalInProgress={15} totalPlan={99} icon={moscowLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Москва" total={1352831} color="info" icon={'ant-design:apple-filled'} />
+            <AppWidgetSummary title="Москва" totalInProgress={18} totalPlan={87} color="info" icon={spLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Санкт-Петербург" total={1723315} color="warning" icon={'ant-design:windows-filled'} />
+            <AppWidgetSummary title="Санкт-Петербург" totalInProgress={5} totalPlan={56} color="warning" icon={minskLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Казань" total={234} color="error" icon={'ant-design:bug-filled'} />
+            <AppWidgetSummary title="Казань" totalInProgress={16} totalPlan={98} color="error" icon={kazanLogo} />
           </Grid>
+
 
           {/* <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits
@@ -170,7 +176,14 @@ export default function DashboardApp() {
           </Grid> */}
 
           <Grid item xs={12} md={12} lg={12}>
+          <Typography variant="h4" sx={{ opacity: 1, my: 4 }}>
+        Календарь проектов
+      </Typography>
             <Calendar />
+          </Grid>
+
+          <Grid item xs={12} md={12} lg={12}>
+           <Table />
           </Grid>
 
           {/* <Grid item xs={12} md={6} lg={4}>

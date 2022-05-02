@@ -1,9 +1,10 @@
 // ----------------------------------------------------------------------
+import accountAvatar from '../assets/images/account.jpeg';
 
 const account = {
-  displayName: 'Jaydon Frankie',
+  displayName: 'Виталий Кондратенко',
   email: 'demo@minimals.cc',
-  photoURL: '/static/mock-images/avatars/avatar_default.jpg',
+  photoURL: accountAvatar,
 };
 
 export default account;
