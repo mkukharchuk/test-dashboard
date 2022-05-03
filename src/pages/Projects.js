@@ -1,11 +1,11 @@
-import { useState, Fragment } from 'react';
+import { useState, } from 'react';
 // material
-import { Container, Stack, Typography, Button } from '@mui/material';
+import { Container, Typography, Button, Box } from '@mui/material';
 // components
 import { Scheduler } from "@aldabil/react-scheduler";
 // import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import Page from '../components/Page';
-import { ProductSort, ProductList, ProductCartWidget, ProductFilterSidebar } from '../sections/@dashboard/products';
+// import { ProductSort, ProductList, ProductCartWidget, ProductFilterSidebar } from '../sections/@dashboard/products';
 // mock
 
 import { RESOURCES, EVENTS } from "../_mock/calendar";
@@ -13,17 +13,17 @@ import { RESOURCES, EVENTS } from "../_mock/calendar";
 // ----------------------------------------------------------------------
 
 export default function EcommerceShop() {
-  const [openFilter, setOpenFilter] = useState(false);
+  // const [openFilter, setOpenFilter] = useState(false);
 
-  const handleOpenFilter = () => {
-    setOpenFilter(true);
-  };
+  // const handleOpenFilter = () => {
+  //   setOpenFilter(true);
+  // };
 
-  const handleCloseFilter = () => {
-    setOpenFilter(false);
-  };
+  // const handleCloseFilter = () => {
+  //   setOpenFilter(false);
+  // };
 
-  const [mode, setMode] = useState("default");
+  const [mode, setMode] = useState("tabs");
 
   return (
     <Page title="Dashboard: Products">
@@ -44,25 +44,24 @@ export default function EcommerceShop() {
         </Stack> */}
 
         <>
-      <div style={{ textAlign: "center" }}>
-        <span>Resource View Mode: </span>
-        <Button
-          color={mode === "default" ? "primary" : "inherit"}
-          variant={mode === "default" ? "contained" : "text"}
-          size="small"
-          onClick={() => setMode("default")}
-        >
-          Default
-        </Button>
+        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'left', marginBottom: '10px' }}>
         <Button
           color={mode === "tabs" ? "primary" : "inherit"}
           variant={mode === "tabs" ? "contained" : "text"}
           size="small"
           onClick={() => setMode("tabs")}
         >
-          Tabs
+          По городам
         </Button>
-      </div>
+        <Button
+          color={mode === "default" ? "primary" : "inherit"}
+          variant={mode === "default" ? "contained" : "text"}
+          size="small"
+          onClick={() => setMode("default")}
+        >
+          Показать все
+        </Button>
+      </Box>
       <Scheduler
         events={EVENTS}
         resources={RESOURCES}

@@ -11,7 +11,7 @@ import Register from './pages/Register';
 import Projects from './pages/Projects';
 import Logistic from './pages/Logistic';
 import Clients from './pages/Clients';
-import Tasks from './pages/Tasks';
+// import Tasks from './pages/Tasks';
 import DashboardApp from './pages/DashboardApp';
 
 // ----------------------------------------------------------------------

@@ -1,10 +1,8 @@
 import { useState, Fragment } from 'react';
 // material
-import { Container, Stack, Typography, Button, Box } from '@mui/material';
+import { Typography, Button, Box } from '@mui/material';
 // components
 import { Scheduler } from "@aldabil/react-scheduler";
-// import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import Page from '../Page';
 // mock
 
 import { RESOURCES, EVENTS } from "../../_mock/calendar";
@@ -15,9 +13,6 @@ export default function Calendar() {
   const [mode, setMode] = useState("tabs");
 
   return (
-    // <Page title="Dashboard: Products">
-    //   <Container>
-
 <>
       <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'left', marginBottom: '10px' }}>
         <Button

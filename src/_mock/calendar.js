@@ -84,27 +84,27 @@ export const EVENTS = [
       title: "Минск",
       // mobile: "555666777",
       avatar: "https://picsum.photos/200/300",
-      color: "#ab2d2d"
+      color: "#4caf50"
     },
     {
       admin_id: 2,
       title: "Москва",
       // mobile: "545678354",
       avatar: "https://picsum.photos/200/300",
-      color: "#58ab2d"
+      color: "#b2102f"
     },
     {
       admin_id: 3,
       title: "Санкт-Питербург",
       // mobile: "543678433",
       avatar: "https://picsum.photos/200/300",
-      color: "#a001a2"
+      color: "#2979ff"
     },
     {
       admin_id: 4,
       title: "Казань",
       // mobile: "507487620",
       avatar: "https://picsum.photos/200/300",
-      color: "#08c5bd"
+      color: "#009688"
     }
   ];

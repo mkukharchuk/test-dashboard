@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import { alpha, styled } from '@mui/material/styles';
 import { Card, Grid, Icon, Typography, Box } from '@mui/material';
 // utils
-import { fShortenNumber } from '../../../utils/formatNumber';
-// components
-import Iconify from '../../../components/Iconify';
-import ison from '../../../assets/icons/Moscow.svg';
 
 // ----------------------------------------------------------------------
 
@@ -39,7 +35,6 @@ export default function AppWidgetSummary({ title, totalInProgress, totalPlan, ic
         py: 5,
         px: 2,
         paddingRight: '30px',
-        boxShadow: 0,
         textAlign: 'center',
         flexDirection: 'row',
         display: 'flex',
@@ -73,7 +68,7 @@ export default function AppWidgetSummary({ title, totalInProgress, totalPlan, ic
         }}
       >
         <Icon sx={{width: '4.5rem', height: '4.5rem'}}>
-          <img src={icon}/>
+          <img src={icon} alt="city-icon"/>
         </Icon>
         {/* <Iconify icon={icon} width={24} height={24} /> */}
       </IconWrapperStyle>
