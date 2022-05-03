@@ -42,7 +42,7 @@ const NOTIFICATIONS = [
     id: faker.datatype.uuid(),
     title: faker.name.findName(),
     description: 'answered to your comment on the Minimal',
-    avatar: '/static/mock-images/avatars/avatar_2.jpg',
+    avatar: 'assets/mock-images/avatars/avatar_2.jpg',
     type: 'friend_interactive',
     createdAt: sub(new Date(), { hours: 3, minutes: 30 }),
     isUnRead: true,
@@ -246,25 +246,25 @@ function renderContent(notification) {
 
   if (notification.type === 'order_placed') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_package.svg" />,
+      avatar: <img alt={notification.title} src="test-dashboard/static/icons/ic_notification_package.svg" />,
       title,
     };
   }
   if (notification.type === 'order_shipped') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_shipping.svg" />,
+      avatar: <img alt={notification.title} src="test-dashboard/static/icons/ic_notification_shipping.svg" />,
       title,
     };
   }
   if (notification.type === 'mail') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_mail.svg" />,
+      avatar: <img alt={notification.title} src="test-dashboard/static/icons/ic_notification_mail.svg" />,
       title,
     };
   }
   if (notification.type === 'chat_message') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_chat.svg" />,
+      avatar: <img alt={notification.title} src="test-dashboard/static/icons/ic_notification_chat.svg" />,
       title,
     };
   }

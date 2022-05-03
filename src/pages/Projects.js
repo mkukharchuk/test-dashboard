@@ -29,7 +29,7 @@ export default function EcommerceShop() {
     <Page title="Dashboard: Products">
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Calendar
+          Проекты
         </Typography>
 
         {/* <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" sx={{ mb: 5 }}>

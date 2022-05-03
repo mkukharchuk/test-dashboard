@@ -46,7 +46,7 @@ export default function AppWidgetSummary({ title, totalInProgress, totalPlan, ic
         justifyContent: 'space-between',
         color: (theme) => theme.palette.text.primary,
         bgcolor: (theme) => theme.palette.background.paper,
-        boxShadow: '0px 10px 30px rgba(54, 159, 255, 0.4)',
+        boxShadow: 'rgb(90 114 123 / 11%) 0px 7px 30px 0px',
         ...sx,
       }}
       {...other}

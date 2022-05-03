@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------
-import accountAvatar from '../assets/images/account.jpeg';
+import accountAvatar from '../assets/images/avatar.png';
 
 const account = {
   displayName: 'Виталий Кондратенко',

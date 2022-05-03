@@ -5,7 +5,6 @@ import { sample } from 'lodash';
 
 const logistic = [...Array(24)].map((_, index) => ({
   id: faker.datatype.uuid(),
-  avatarUrl: `/static/mock-images/avatars/avatar_${index + 1}.jpg`,
   name: faker.company.companyName(),
   date: sample([
     '12 Dec, 2022',

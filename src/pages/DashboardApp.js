@@ -38,15 +38,15 @@ export default function DashboardApp() {
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Минск" totalInProgress={15} totalPlan={99} icon={moscowLogo} />
+            <AppWidgetSummary title="Минск" totalInProgress={15} totalPlan={99} icon={minskLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Москва" totalInProgress={18} totalPlan={87} color="info" icon={spLogo} />
+            <AppWidgetSummary title="Москва" totalInProgress={18} totalPlan={87} color="info" icon={moscowLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Санкт-Петербург" totalInProgress={5} totalPlan={56} color="warning" icon={minskLogo} />
+            <AppWidgetSummary title="Санкт-Петербург" totalInProgress={5} totalPlan={56} color="warning" icon={spLogo} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
